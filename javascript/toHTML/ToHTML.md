@@ -1,6 +1,6 @@
 # To HTML
 
-[:arrow_left: Return to ](/README.md)
+[:arrow_left: Return to Hub](../README.md)
 
 > This is a full rundown of the files: 
 > 

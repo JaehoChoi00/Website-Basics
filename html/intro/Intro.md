@@ -1,6 +1,6 @@
 # Intro
 
-[← Return to Hub](/html/README.md)
+[← Return to Hubs](/html/README.md)
 
 > This is a full rundown of the files:
 >
