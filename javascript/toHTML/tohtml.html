@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript in HTML Example</title>
+</head>
+<body onload = "document.getElementById('element-id-2').innerHTML = '[element-id-2] Paragraph text changed using inline method';">
+    <a href="/javascript/index.html">← Return to Hub</a>
+    <br>
+    <a href="/javascript/toHTML/exposed.html">Expose Sytnax →</a>
+    <h2>Heading 2</h2>
+    
+    <p id = "element-id-1"> [element-id-1] First paragraph with id</p>
+    <p id = "element-id-2"> [element-id-2] Second paragraph with id</p>
+    <p id = "element-id-3"> [element-id-3] Third paragraph with id</p>
+
+    <script>
+        document.getElementById("element-id-1").innerHTML = "[element-id-1] Hello World!";
+    </script>
+
+    <script src = "/javascript/toHTML/script.js" ></script>
+
+</body>
+</html>

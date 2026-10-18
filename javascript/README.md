@@ -1,6 +1,8 @@
 # JavaScript
 
-<img src="Javascript-shield.svg" width = 100 height = 141> 
+[:arrow_left: Return to Main README](../README.md)
+
+<img src="../Assets/Logos/Javascript-shield.svg" width = 100 height = 141> 
 
 > This is where I document my journey **learning C**.  
 

@@ -32,6 +32,8 @@ $RECYCLE.BIN/
 
 # Common build directories
 build/
+_site/
+.next/
 dist/
 out/
 .cache/

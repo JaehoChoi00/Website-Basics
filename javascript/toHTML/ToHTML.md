@@ -1,6 +1,6 @@
 # To HTML
 
-[:arrow_left: Return to ](../README.md)
+[:arrow_left: Return to ](/README.md)
 
 > This is a full rundown of the files: 
 > 
@@ -75,9 +75,10 @@
 ***Syntax: Javascript***
 
 ```javascript
-document.getElementById("element-id-1")
-document.getElementById("element-id-2")
-document.getElementById("element-id-3") // (inside your script.js file)
+document.getElementById("element-id-3").innerHTML = "[element-id-3] Paragraph text changed from script.js file";
+
 ```
 
 ---
+
+[:arrow_up: Return to Top](#to-html)

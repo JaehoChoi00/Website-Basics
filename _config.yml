@@ -1,0 +1,10 @@
+title: Website Basics
+url: "https://jaehochoi00.github.io"
+baseurl: "/Website-Basics"
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false

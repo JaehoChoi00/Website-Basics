@@ -12,22 +12,28 @@
 
 ## Sections
 
-> * [`The Internet`](/internet/README.md)
-> * [`Domain Names & DNS`](/dns/README.md)
-> * [`HTTP`](/http/README.md)
-> * [`Browsers`](/browser/README.md)
-> * [`HTML`](/html/README.md)
-> * [`CSS`](/css/README.md)
-> * [`JavaScript`](/javascript/README.md)
-
+- [The Internet](/internet/README.md)
+- [Domain Names & DNS](/dns/README.md)
+- [HTTP](/http/README.md)
+- [Browsers](/browser/README.md)
+- [HTML](/html/README.md)
+- [CSS](/css/README.md)
+- [JavaScript](/javascript/README.md)
 
 ## Tools
 
-> * [`Animejs`](https://animejs.com)
+> * [`Animejs`](https://animejs.com) — JavaScript Animation Engine
+> * `Ruby` `jekyll` — Static Site Generator
+>   * **Setup Commands:**
+>     ```bash
+>     ruby -v
+>     bundle install
+>     bundle exec jekyll serve
+>     ```
 
 ## Experimentation
 
-> * [`Experimentation`](/experiments/Experimentation.md)
+> * [`Experimentation`](/experiments/README.md)
 
 ### References
 > * [CERN — The World Wide Web Project](https://info.cern.ch/hypertext/WWW/TheProject.html)

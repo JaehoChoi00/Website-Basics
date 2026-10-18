@@ -1,6 +1,8 @@
 # HTML
 
-<img src="Javascript-shield.svg" width = 100 height = 141> 
+[:arrow_left: Return to Main README](../README.md)
+
+<img src="../Assets/Logos/HTML_Shield.png" width = 100 height = 100> 
 
 > This is where I document my journey **learning C**.  
 
@@ -10,7 +12,8 @@
 
 ## Sections 
 
-> * [Go To Initial Page](/html/index.html)
+> * [Intro](/html/intro/Intro.md)
+> * [Elements](/html/elements/Elements.md)
 
 ## Learning Resources 
 
