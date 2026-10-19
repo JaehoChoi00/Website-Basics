@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-US" style="background-color: black;">
+<html lang = "en-US" style = "background-color: black;">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <title>Output</title>
     </head>
 
-    <body style="color: white;">
+    <body style = "color: white;">
         <h1>Output</h1>
 
-        <a href="../index.html">← Return to Hub</a>
+        <a href = "../index.html" style = "color: aqua">← Return to Hub</a>
         <br>
-        <a href="./content.html">← Unexpose Syntax</a>
+        <a href = "./content.html" style = "color: aqua">← Unexpose Syntax</a>
         <hr>
 
         <!-- SECTION 1: CONSOLE OUTPUT -->
-        <h2 style="background-color:rgba(255, 99, 71, 0.5);">
+        <h2 style = "background-color:rgba(255, 99, 71, 0.5);">
             1. Console Output
         </h2>
 
@@ -29,41 +29,41 @@
         <hr>
 
         <!-- SECTION 2: TEXT OUTPUT -->
-        <h2 style="background-color:rgba(255, 159, 64, 0.5);">
+        <h2 style = "background-color:rgba(255, 159, 64, 0.5);">
             2. Text Output Using innerText
         </h2>
 
-        <pre><code>document.getElementById("element-id-1").innerText =
+        <pre><code>document.getElementById("element-id-1").innerText  = 
     "Text changed using innerText";</code></pre>
 
-        <p id="element-id-1">Original text</p>
+        <p id = "element-id-1">Original text</p>
 
         <script>
-            document.getElementById("element-id-1").innerText =
+            document.getElementById("element-id-1").innerText  = 
                 "Text changed using innerText";
         </script>
 
         <hr>
 
         <!-- SECTION 3: HTML OUTPUT -->
-        <h2 style="background-color:rgba(180, 210, 70, 0.5);">
+        <h2 style = "background-color:rgba(180, 210, 70, 0.5);">
             3. HTML Output Using innerHTML
         </h2>
 
-        <pre><code>document.getElementById("element-id-2").innerHTML =
+        <pre><code>document.getElementById("element-id-2").innerHTML  = 
     "Text containing &lt;strong&gt;HTML markup&lt;/strong&gt;";</code></pre>
 
-        <p id="element-id-2"> Original text </p>
+        <p id = "element-id-2"> Original text </p>
 
         <script>
-            document.getElementById("element-id-2").innerHTML =
+            document.getElementById("element-id-2").innerHTML  = 
                 "Text containing <strong>HTML markup</strong>";
         </script>
 
         <hr>
 
         <!-- SECTION 4: ALERT OUTPUT -->
-        <h2 style="background-color:rgba(75, 192, 120, 0.5);">
+        <h2 style = "background-color:rgba(75, 192, 120, 0.5);">
             4. Browser Dialog Output
         </h2>
 
@@ -74,26 +74,26 @@
             It is triggered by user interaction in this example.
         </p>
 
-        <button onclick="alert('Hello World!')"> Test alert() </button>
+        <button onclick = "alert('Hello World!')"> Test alert() </button>
 
         <hr>
 
         <!-- SECTION 5: EXTERNAL JAVASCRIPT -->
-        <h2 style="background-color:rgba(54, 162, 150, 0.5);">
+        <h2 style = "background-color:rgba(54, 162, 150, 0.5);">
             5. External JavaScript File
         </h2>
 
-        <pre><code>&lt;script src="./Output.js"&gt;&lt;/script&gt;</code></pre>
+        <pre><code>&lt;script src = "./Output.js"&gt;&lt;/script&gt;</code></pre>
 
         <h4>Inside script.js: </h4>
 
         <pre>console.log("[console.log] Output displayed in the browser console");
 
 // SECTION 2: HTML TEXT OUTPUT
-document.getElementById("element-id-1").innerText = "[element-id-1] Text changed using innerText";
+document.getElementById("element-id-1").innerText  =  "[element-id-1] Text changed using innerText";
 
 // SECTION 3: HTML ELEMENT OUTPUT
-document.getElementById("element-id-2").innerHTML = "[element-id-2] Text containing <strong>HTML markup</strong>";
+document.getElementById("element-id-2").innerHTML  =  "[element-id-2] Text containing <strong>HTML markup</strong>";
 
 // SECTION 4: ALERT OUTPUT
 alert("[alert] Output displayed in a browser dialog");
@@ -105,7 +105,7 @@ alert("[alert] Output displayed in a browser dialog");
         <hr>
 
         <!-- SECTION 6: DOCUMENT.WRITE -->
-        <h2 style="background-color:rgba(100, 130, 220, 0.5);">
+        <h2 style = "background-color:rgba(100, 130, 220, 0.5);">
             6. Document Output Using document.write()
         </h2>
 
