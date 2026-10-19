@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang = "en-US" style = "background-color: black;">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>JavaScript Syntax Rules</title>
+    </head>
+
+    <body style = "color: white;">
+        <h1>JavaScript Syntax Rules — Exposed Syntax</h1>
+
+        <a href = "../index.html">← Return to Hub</a>
+        <br>
+        <a href = "./content.html">← Unexpose Syntax</a>
+        <hr>
+
+        <!-- SECTION 1: VARIABLES -->
+        <h2 style = "background-color: rgba(255, 99, 71, 0.5);">
+            1. Variables
+        </h2>
+
+        <p>
+            Variables store values or references used by a program.
+            let allows reassignment, while const prevents reassignment
+            of the variable binding. However, const does not make an
+            object immutable. var is an older declaration keyword
+            with different scoping rules.
+        </p>
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>// let: can be reassigned.
+let number  =  64;
+number  =  128;
+
+// const: cannot be reassigned.
+const pi  =  3.14159;
+
+// Object properties can still be modified.
+const settings  =  { volume: 50 };
+settings.volume  =  75;
+
+// var: older declaration syntax.
+var oldVariable  =  "Declared using var";</code></pre>
+</details>
+
+        <hr>
+
+        <!-- SECTION 2: DATA TYPES -->
+        <h2 style = "background-color: rgba(255, 159, 64, 0.5);">
+            2. Data Types
+        </h2>
+
+
+        <p>
+            JavaScript has seven primitive types: Number, String,
+            Boolean, Undefined, Null, BigInt and Symbol.
+            Objects are non-primitive values, and arrays are a
+            specialised kind of object.
+        </p>
+
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>let integer  =  256;
+let decimal  =  3.14;
+let string  =  "This is a string";
+let boolean  =  true;
+let unassigned;
+let myNull  =  null;
+let bigInt  =  9007199254740993n;
+let symbol  =  Symbol("uniqueKey");
+
+let object  =  {
+    storedString: "Stored String",
+    storedBoolean: true,
+    storedNumber: 128
+};
+
+let array  =  [10, 20, 30];</code></pre>
+</details>
+
+<hr>
+
+        <p>
+            typeof null returns "object" because of a historical
+            JavaScript quirk. Array.isArray() checks whether a
+            value is an array.
+        </p>
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>console.log(typeof integer);       // "number"
+console.log(typeof string);        // "string"
+console.log(typeof boolean);       // "boolean"
+console.log(typeof unassigned);    // "undefined"
+console.log(typeof myNull);        // "object"
+console.log(typeof bigInt);        // "bigint"
+console.log(typeof symbol);        // "symbol"
+console.log(typeof object);        // "object"
+console.log(typeof array);         // "object"
+
+console.log(Array.isArray(array)); // true</code></pre>
+
+        </details> 
+
+        <hr>
+
+        <!-- SECTION 3: STATEMENTS AND EXPRESSIONS -->
+        <h2 style = "background-color: rgba(180, 210, 70, 0.5);">
+            3. Statements and Expressions
+        </h2>
+
+        <p>
+            A statement is an instruction executed by JavaScript.
+            An expression produces a value. In the final line,
+            firstNumber + secondNumber is an expression that evaluates
+            to 30, and the complete line is a variable declaration
+            statement.
+        </p>
+
+        <hr>
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>let firstNumber  =  10;
+let secondNumber  =  20;
+
+let sum  =  firstNumber + secondNumber;</code></pre>
+        </details>
+
+        <hr>
+
+        <!-- SECTION 4: OPERATORS -->
+        <h2 style = "background-color: rgba(75, 192, 120, 0.5);">
+            4. Operators
+        </h2>
+
+        <p>
+            Arithmetic operators perform calculations. Comparison
+            operators compare values, while logical operators combine
+            or invert Boolean conditions.
+        </p>
+
+        <p>
+            Loose equality ( =  = ) may convert types before comparing.
+            Strict equality ( =  =  = ) compares without that type conversion.
+            Strict equality is generally preferable when type conversion
+            is not intended.
+        </p>
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>let a  =  10;
+let b  =  3;
+
+// Arithmetic
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+console.log(a ** b);
+
+// Comparison
+console.log(5  =  =  =  5);
+console.log(5 ! =  =  3);
+console.log(a > b);
+console.log(a < b);
+
+// Logical
+console.log(true && false);
+console.log(true || false);
+console.log(!true);
+
+// Loose and strict equality
+console.log(5  =  =  "5");  // true
+console.log(5  =  =  =  "5"); // false</code></pre>
+        </details>
+
+        <hr>
+
+        <!-- SECTION 5: CASE SENSITIVITY -->
+        <h2 style = "background-color: rgba(54, 162, 150, 0.5);">
+            5. Case Sensitivity
+        </h2>
+        <p>
+            JavaScript is case-sensitive. myVariable and MyVariable
+            are two different identifiers.
+        </p>
+
+        <hr>
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>let myVariable  =  "Lowercase m";
+let MyVariable  =  "Uppercase M";
+
+console.log(myVariable);
+console.log(MyVariable);</code></pre>
+        </details>
+        <hr>
+
+        <!-- SECTION 6: COMMENTS -->
+        <h2 style = "background-color: rgba(100, 130, 220, 0.5);">
+            6. Comments
+        </h2>
+
+        <p>
+            Comments explain code to people reading it. JavaScript
+            does not execute comments as program instructions.
+        </p>
+
+        <hr>
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>// Single-line comment
+
+/*
+    Multiline comment
+    spanning several lines
+*/</code></pre>
+        </details>
+
+        <hr>
+
+        <!-- SECTION 7: STRINGS AND TEMPLATE LITERALS -->
+        <h2 style = "background-color: rgba(180, 100, 200, 0.5);">
+            7. Strings and Template Literals
+        </h2>
+
+        <p>
+            Strings represent text. Template literals use backticks
+            and ${} to insert values or expressions into a string.
+        </p>
+
+        <hr>
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>let name  =  "JavaScript";
+let version  =  2026;
+
+let message  =  `Learning ${name} in ${version}`;
+
+console.log(message);</code></pre>
+        </details>
+
+        <hr>
+
+        <!-- SECTION 8: TYPE CONVERSION -->
+        <h2 style = "background-color: rgba(220, 100, 130, 0.5);">
+            8. Type Conversion
+        </h2>
+
+        <p>
+            Number() converts a value into a number where possible.
+            The string "123" becomes the number 123. Invalid numeric
+            text such as "hello" produces NaN, meaning Not-a-Number.
+        </p>
+
+        <hr>
+
+        <details><summary><strong>Expand Syntax</strong></summary>
+        <pre><code>let numericText  =  "123";
+let convertedNumber  =  Number(numericText);
+
+console.log(typeof numericText);     // "string"
+console.log(typeof convertedNumber); // "number"
+
+console.log(Number("hello")); // NaN</code></pre>
+        </details>
+
+        <hr>
+
+    </body>
+</html>

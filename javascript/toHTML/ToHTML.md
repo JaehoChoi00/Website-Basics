@@ -4,7 +4,8 @@
 
 > This is a full rundown of the files: 
 > 
-> * [index.html](/javascript/toHTML/index.html)
+> * [content.html](/javascript/toHTML/content.html)
+> * [exposed.html](/javascript/toHTML/exposed.html)
 > * [script.js](/javascript/toHTML/script.js)
 > <br>
 

@@ -13,6 +13,9 @@
 ## Sections 
 
 > * [`To HTML`](/javascript/toHTML/ToHTML.md)
+> * [`Output`](/javascript/output/Output.md)
+> * [`Syntax`](/javascript/syntax/Syntax.md)
+> * [`If`](/javascript/if/If.md)
 
 ## Tools
 
