@@ -1,85 +1,188 @@
-# To HTML
+# Conditions
 
 [:arrow_left: Return to Hub](../README.md)
 
-> This is a full rundown of the files: 
-> 
-> * [content.html](/javascript/toHTML/content.html)
-> * [exposed.html](/javascript/toHTML/exposed.html)
-> * [script.js](/javascript/toHTML/script.js)
+> This is a full rundown of the files:
+>
+> * [content.html](/javascript/if/content.html)
+> * [exposed.html](/javascript/if/exposed.html)
+> * [script.js](/javascript/if/script.js)
 > <br>
 
 ## Sections:
 
-> * [`HTML Document Structure`](#html-document-structure)
-> * [`HTML Elements and IDs`](#html-elements-and-ids)
-> * [`Inline JavaScript`](#inline-javascript)
-> * [`Embedded JavaScript`](#embedded-javascript)
-> * [`Accessing HTML Elements`](#accessing-html-elements)
+> * [`If Statements`](#if-statements)
+> * [`Ternary Operator`](#ternary-operator)
+> * [`Switch Statements`](#switch-statements)
+> * [`Logical Operators`](#logical-operators)
+> * [`Connecting JavaScript with HTML`](#connecting-javascript-with-html)
+> * [`End of Exposed Syntax`](#end-of-exposed-syntax)
 
 ---
 
-### [HTML Document Structure](#sections)
+### [If Statements](#if-statements)
 
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Enter your title here</title>
-</head>
-<body>
-    <!-- HTML content and JavaScript -->
-</body>
-</html>
-```
+> * [`if`](#if)
+> * [`if -> else`](#ifelse)
+> * [`if -> else if -> else`](#if---else-if---else)
 
----
+#### [`if`](#if-statements)
 
-### [HTML Elements and IDs](#sections)
-
-***Syntax: HTML***
-
-```HTML
-<p id = "element-id-1"> [element-id-1] First paragraph with id</p>
-<p id = "element-id-2"> [element-id-2] Second paragraph with id</p>
-<p id = "element-id-3"> [element-id-3] Third paragraph with id</p>
-```
-
----
-
-### [Inline JavaScript](#sections)
-
-***Syntax: HTML***
-
-```HTML
-<body onload="document.getElementById('element-id-2').innerHTML = '[element-id-2] Paragraph text changed using inline method';">
-
-```
-
----
-
-### [Embedded JavaScript](#sections)
-
-***Syntax: HTML***
-
-```HTML
-<script>
-    document.getElementById("element-id-1").innerHTML = "[element-id-1] Hello World!";
-</script>
-```
-
----
-
-### [Accessing HTML Elements](#sections)
-
-***Syntax: Javascript***
+**Syntax: JavaScript**
 
 ```javascript
-document.getElementById("element-id-3").innerHTML = "[element-id-3] Paragraph text changed from script.js file";
-
+if (condition) {
+    // Code executes when condition is true
+}
 ```
 
 ---
 
-[:arrow_up: Return to Top](#to-html)
+#### [`if else`](#if-statements)
+
+**Syntax: JavaScript**
+
+```javascript
+if (condition) {
+    // Code executes when condition is true
+} else {
+    // Code executes when condition is false
+}
+```
+
+---
+
+#### [`if -> else if -> else`](#if-statements)
+
+**Syntax: JavaScript**
+
+```javascript
+if (condition1) {
+    // Code executes when condition1 is true
+} else if (condition2) {
+    // Code executes when condition1 is false and condition2 is true
+} else {
+    // Code executes when all preceding conditions are false
+}
+```
+
+---
+
+#### [`Nested If Statements`](#if-statements)
+
+**Syntax: JavaScript**
+
+```javascript
+if (condition1) {
+    if (condition2) {
+        // Code executes when both conditions are true
+    }
+}
+```
+
+---
+
+### [Ternary Operator](#ternary-operator)
+
+**Syntax: JavaScript**
+
+```javascript
+condition ? expressionIfTrue : expressionIfFalse;
+```
+
+---
+
+### [Switch Statements](#switch-statements)
+
+**Syntax: JavaScript**
+
+```javascript
+switch (expression) {
+    case value1:
+        // Code executes when expression matches value1
+        break;
+
+    case value2:
+        // Code executes when expression matches value2
+        break;
+
+    default:
+        // Code executes when no case matches
+}
+```
+
+---
+
+### [Logical Operators](#logical-operators)
+
+#### [`AND (&&)`](#and)
+
+**Syntax: JavaScript**
+
+```javascript
+condition1 && condition2;
+```
+
+---
+
+#### [`OR (||)`](#or)
+
+**Syntax: JavaScript**
+
+```javascript
+condition1 || condition2;
+```
+
+---
+
+#### [`NOT (!)`](#not)
+
+**Syntax: JavaScript**
+
+```javascript
+!condition;
+```
+
+---
+
+### [Connecting JavaScript with HTML](#connecting-javascript-with-html)
+
+#### [`Accessing HTML Elements`](#accessing-html-elements)
+
+**Syntax: JavaScript**
+
+```javascript
+document.getElementById("element-id").innerHTML = "Updated text";
+```
+
+---
+
+#### [`Changing HTML Based on a Condition`](#changing-html-based-on-a-condition)
+
+**Syntax: HTML**
+
+```html
+<p id="condition-output">Initial paragraph text</p>
+```
+
+**Syntax: JavaScript**
+
+```javascript
+const output = document.getElementById("condition-output");
+
+if (condition) {
+    output.innerHTML = "Condition is true";
+} else {
+    output.innerHTML = "Condition is false";
+}
+```
+
+---
+
+### [End of Exposed Syntax](#end-of-exposed-syntax)
+
+This concludes the exposed syntax for JavaScript conditions. The examples above cover the core ways to control program flow using conditions, select between alternatives, combine logical expressions, and update HTML elements based on a result.
+
+---
+
+[:arrow_up: Return to Top](#conditions)

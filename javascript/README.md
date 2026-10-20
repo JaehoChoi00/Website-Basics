@@ -15,7 +15,8 @@
 > * [`To HTML`](/javascript/toHTML/ToHTML.md)
 > * [`Output`](/javascript/output/Output.md)
 > * [`Syntax`](/javascript/syntax/Syntax.md)
-> * [`If`](/javascript/if/If.md)
+> * [`Conditions`](/javascript/conditions/Conditions.md)
+> * [`Loops`](/javascript/loops/Loops.md)
 
 ## Tools
 

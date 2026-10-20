@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang = "en-US" style = "background-color: black;">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Conditions</title>
+    </head>
+
+    <body style = "color: white;">
+        <h1>Conditions</h1>
+
+        <a href = "../index.html" style = "color: aqua">← Return to Hub</a>
+        <br>
+        <a href = "./content.html" style = "color: aqua">← Unexpose Syntax</a>
+        <hr>
+
+        <!-- SECTION 1: IF STATEMENTS -->
+        <h2 style = "background: linear-gradient(90deg, #7f1d1d, #ff6347, #7f1d1d);">
+            1. If Statements
+        </h2>
+        <details><summary></summary>
+        <h3 style = "background: linear-gradient(90deg, #450a0a, #991b1b, #450a0a);">
+            Syntax
+        </h3>
+
+        <pre><code>if (condition) {
+    // Executed when condition is true
+}
+else if (anotherCondition) {
+    // Executed when the first condition is false
+    // and anotherCondition is true
+}
+else {
+    // Executed when all preceding conditions are false
+}</code></pre>
+
+        <h3 style = "background: linear-gradient(90deg, #450a0a, #991b1b, #450a0a);">
+            Initial Values
+        </h3>
+
+        <pre><code>let currentNumber = 0;
+let targetNumber = 1;</code></pre>
+
+        <p id = "currentNumber">[currentNumber] Initial number</p>
+        <p id = "targetNumber">[targetNumber] Target number</p>
+
+        <h3 style = "background: linear-gradient(90deg, #450a0a, #991b1b, #450a0a);">
+            Example 1: If / Else If / Else
+        </h3>
+
+        <pre><code>if (currentNumber === targetNumber)
+    "Target achieved";
+else if (currentNumber > targetNumber)
+    "Current number overshot target.";
+else {
+    currentNumber += 1;
+    "Target missed, adding 1.";
+}</code></pre>
+
+        <p id = "element-id-1">[element-id-1] First conditional result</p>
+
+        <h3 style = "background: linear-gradient(90deg, #450a0a, #991b1b, #450a0a);">
+            Example 2: Conditional With Multiple Statements
+        </h3>
+
+        <pre><code>if (currentNumber === targetNumber) {
+    currentNumber += 1;
+    "Target achieved. Stepping up once more.";
+}
+else if (currentNumber > targetNumber)
+    "Current number overshot target.";
+else
+    "Under target number";</code></pre>
+
+        <p id = "element-id-2">[element-id-2] Second conditional result</p>
+
+        <h3 style = "background: linear-gradient(90deg, #450a0a, #991b1b, #450a0a);">
+            Example 3: Re-evaluating The Updated Value
+        </h3>
+
+        <pre><code>if (currentNumber === targetNumber)
+    "Target achieved";
+else if (currentNumber > targetNumber)
+    "Current number overshot target.";
+else
+    "Under target number";</code></pre>
+
+        <p id = "element-id-3">[element-id-3] Third conditional result</p>
+
+        <hr>
+
+        </details>
+
+        <!-- SECTION 2: TERNARY OPERATOR -->
+        <h2 style = "background: linear-gradient(90deg, #78350f, #ff9f40, #78350f);">
+            2. Ternary Operator
+        </h2>
+
+        <details><summary></summary>
+        <h3 style = "background: linear-gradient(90deg, #451a03, #92400e, #451a03);">
+            Syntax
+        </h3>
+
+        <pre><code>condition ? expressionIfTrue : expressionIfFalse;</code></pre>
+
+        <h3 style = "background: linear-gradient(90deg, #451a03, #92400e, #451a03);">
+            Initial Values
+        </h3>
+
+        <pre><code>let someNumber = 1;
+let someString = "1";</code></pre>
+
+        <p id = "someNumber">[someNumber] Some number</p>
+        <p id = "someString">[someString] Some string</p>
+
+        <h3 style = "background: linear-gradient(90deg, #451a03, #92400e, #451a03);">
+            Strict Type Comparison
+        </h3>
+
+        <pre><code>let typeComparisonResult =
+    (someNumber === someString)
+        ? "Types are perfectly identical!"
+        : "Data types do not match.";</code></pre>
+
+        <p id = "element-id-4">[element-id-4] Ternary result</p>
+
+        <p>
+            The strict equality operator (===) compares values without
+            converting different data types into one another.
+        </p>
+
+        <hr>
+
+        </details>
+
+        <!-- SECTION 3: SWITCH CASES -->
+        <h2 style = "background: linear-gradient(90deg, #365314, #b4d246, #365314);">
+            3. Switch Cases
+        </h2>
+
+        <details><summary></summary>
+
+        <h3 style = "background: linear-gradient(90deg, #1a2e05, #3f6212, #1a2e05);">
+            Syntax
+        </h3>
+
+        <pre><code>switch (expression) {
+    case value1:
+        // Executed when expression matches value1
+        break;
+
+    case value2:
+        // Executed when expression matches value2
+        break;
+
+    default:
+        // Executed when no case matches
+}</code></pre>
+
+        <h3 style = "background: linear-gradient(90deg, #1a2e05, #3f6212, #1a2e05);">
+            Initial Values
+        </h3>
+
+        <pre><code>let startingNumber = 0;
+let endNumber = 5;
+let addBuffer;</code></pre>
+
+        <p id = "startNumber">[startNumber] Starting number</p>
+        <p id = "endNumber">[endNumber] End number</p>
+
+        <h3 style = "background: linear-gradient(90deg, #1a2e05, #3f6212, #1a2e05);">
+            Example: Selecting A Value
+        </h3>
+
+        <pre><code>switch (endNumber) {
+    case 1:
+        addBuffer = 1;
+        break;
+    case 2:
+        addBuffer = 2;
+        break;
+    case 3:
+        addBuffer = 3;
+        break;
+    case 4:
+        addBuffer = 4;
+        break;
+    case 5:
+        addBuffer = 5;
+        break;
+    case 6:
+        addBuffer = 6;
+        break;
+    default:
+        addBuffer = 0;
+}</code></pre>
+
+        <p id = "element-id-5">[element-id-5] Selected value</p>
+
+        <h3 style = "background: linear-gradient(90deg, #1a2e05, #3f6212, #1a2e05);">
+            Updating The Starting Number
+        </h3>
+
+        <pre><code>startingNumber += addBuffer;</code></pre>
+
+        <p id = "element-id-6">[element-id-6] Resulting number</p>
+
+        <hr>
+
+        </details>
+
+        <!-- SECTION 4: LOGICAL OPERATORS -->
+        <h2 style = "background: linear-gradient(90deg, #064e3b, #4bc078, #064e3b);">
+            4. Logical Operators
+        </h2>
+
+        <details><summary></summary>
+
+        <h3 style = "background: linear-gradient(90deg, #022c22, #065f46, #022c22);">
+            Initial Values
+        </h3>
+
+        <pre><code>let bitA = 0;
+let bitB = null;</code></pre>
+
+        <p id = "display-bitA">[display-bitA] Bit A initial state</p>
+        <p id = "display-bitB">[display-bitB] Bit B initial state</p>
+
+        <h3 style = "background: linear-gradient(90deg, #022c22, #065f46, #022c22);">
+            Checking For Missing Values
+        </h3>
+
+        <pre><code>if (bitA === null || bitB === null || bitA === undefined || bitB === undefined) {
+    bitA = bitA ?? 0;
+    bitB = bitB ?? 0;
+}</code></pre>
+
+        <p id = "bitNull">[bitNull] Missing-value check</p>
+        <p id = "reAssigned">[reAssigned] Reassignment status</p>
+        <p id = "display-bitA-2">[display-bitA-2] Bit A reassigned state</p>
+        <p id = "display-bitB-2">[display-bitB-2] Bit B reassigned state</p>
+
+        <h3 style = "background: linear-gradient(90deg, #022c22, #065f46, #022c22);">
+            Logical Gate Expressions
+        </h3>
+
+        <h4 style = "background: linear-gradient(90deg, #042f2e, #0f766e, #042f2e);">
+            NAND
+        </h4>
+
+        <pre><code>let nandOutput = (bitA == 1 && bitB == 1) ? 0 : 1;</code></pre>
+
+        <p id = "display-nand">[display-nand] NAND output</p>
+
+        <h4 style = "background: linear-gradient(90deg, #042f2e, #0f766e, #042f2e);">
+            NOT = NAND(bit, bit)
+        </h4>
+
+        <pre><code>let notOutput = (bitA == 1 && bitA == 1) ? 0 : 1;</code></pre>
+
+        <p id = "display-not">[display-not] NOT output</p>
+
+        <h4 style = "background: linear-gradient(90deg, #042f2e, #0f766e, #042f2e);">
+            AND = NOT(NAND(bitA, bitB))
+        </h4>
+
+        <pre><code>let andOutput = (nandOutput == 1 && nandOutput == 1) ? 0 : 1;</code></pre>
+
+        <p id = "display-and">[display-and] AND output</p>
+
+        <h4 style = "background: linear-gradient(90deg, #042f2e, #0f766e, #042f2e);">
+            OR = NAND(NOT(bitA), NOT(bitB))
+        </h4>
+
+        <pre><code>let orOutput =
+    (
+        ((bitA == 1 && bitA == 1) ? 0 : 1) == 1
+        &&
+        ((bitB == 1 && bitB == 1) ? 0 : 1) == 1
+    )
+    ? 0 : 1;</code></pre>
+
+        <p id = "display-or">[display-or] OR output</p>
+
+        <h4 style = "background: linear-gradient(90deg, #042f2e, #0f766e, #042f2e);">
+            XOR = NAND(NAND(NOT(bitA), bitB), NAND(bitA, NOT(bitB)))
+        </h4>
+
+        <pre><code>let xorOutput =
+    (
+        ((((bitA == 1 && bitA == 1) ? 0 : 1) == 1 && bitB == 1) ? 0 : 1) == 1
+        &&
+        ((bitA == 1 && ((bitB == 1 && bitB == 1) ? 0 : 1) == 1) ? 0 : 1) == 1
+    )
+    ? 0 : 1;</code></pre>
+
+        <p id = "display-xor">[display-xor] XOR output</p>
+
+        <hr>
+
+        </details>
+
+        <!-- SECTION 5: CONNECTING JAVASCRIPT WITH HTML -->
+        <h2 style = "background: linear-gradient(90deg, #164e63, #36a296, #164e63);">
+            5. Connecting JavaScript With HTML
+        </h2>
+
+        <details><summary></summary>
+
+        <h3 style = "background: linear-gradient(90deg, #082f49, #155e75, #082f49);">
+            Selecting An HTML Element
+        </h3>
+
+        <pre><code>document.getElementById("element-id-1");</code></pre>
+
+        <p>
+            getElementById() retrieves an element from the document
+            using the element's id attribute.
+        </p>
+
+        <h3 style = "background: linear-gradient(90deg, #082f49, #155e75, #082f49);">
+            Changing An Element's Content
+        </h3>
+
+        <pre><code>document.getElementById("element-id-1").innerHTML =
+    "New content";</code></pre>
+
+        <p>
+            JavaScript can update the content of an existing HTML element
+            without reloading the webpage.
+        </p>
+
+        <h3 style = "background: linear-gradient(90deg, #082f49, #155e75, #082f49);">
+            Connecting An External JavaScript File
+        </h3>
+
+        <pre><code>&lt;script src = "./script.js"&gt;&lt;/script&gt;</code></pre>
+
+        <p>
+            The HTML document creates the elements, and the external
+            JavaScript file contains the logic that selects and updates them.
+        </p>
+
+        <hr>
+
+        </details>
+
+    </body>
+</html>
